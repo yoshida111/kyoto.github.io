@@ -7,39 +7,23 @@
 
   <!-- * -->
   <style>
-    *{border: 0px solid #ff0000;margin:0!important;padding:0!important;box-sizing:border-box;
-      /*font-family:"Montserrat","游ゴシック","YuGothic","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ","Meiryo",sans-serif;*/
-      font-family:serif;font-weight: lighter;letter-spacing: 0.1em;line-height: 1.8em;}
+    *{border: 0px solid #ff0000;margin:0;padding:0;box-sizing:border-box;font-family:serif;font-weight: lighter;letter-spacing:0.05em;line-height: 1.7;}
   </style>
 
   <!--  header  -->
   <style>
     a{text-decoration:none;}
     ul{list-style:none;}
-    img{pointer-events:none;width:100%;}
+    img{pointer-events:none;width:100%;vertical-align:bottom;}
     header{width:100%;height:100vh;}
     .header{width:100%;height:100vh;position:relative;background-image:url('take.png');background-size:cover;background-position:bottom;opacity: 0.9;}
     .tl{position:absolute;top:0;right:0;width:30vw;height:20vh;border-top:20vh solid rgb(242,236,226);border-left:30vw solid transparent;}
     .top{background-color: rgba(0,0,0,0.3);position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);border: 1px solid #fff;}
     .top h1{padding:18px;font-size:24px;color:#fff;text-shadow:2px 2px 2px black;font-weight:bold;}
-  </style>
-
-  <!-- 使っていないlist -->
-  <style>
-    /*.list{position:absolute;top:0;right:0;padding:10px;position: fixed;}
-    #nav{padding:10px;position: relative;}
-    .nav-unshown{display:none;}
-    #nav-open{display:flex;justify-content:center;align-items:center;width:50px;height:50px;vertical-align:middle;}
-    #nav-open span,#nav-open span:before,#nav-open span:after{position:absolute;height:5px;width:30px;border-radius:30px;background-color:#fff;display:block;content:'';cursor:pointer;box-shadow:2px 2px 2px #000;}
-    #nav-open span:before{bottom: -10px;background-color: #fff;}
-    #nav-open span:after{bottom: 10px;background-color: #fff;}
-    #nav-close{display:none;position:fixed;background-color: #000;z-index:99999;top:0;right:0;width:100%;height:100%;opacity:0;transition: 0.3s ease-in-out;}
-    #nav-content{overflow:auto;position:fixed;top:0;right:0;z-index:99999;width:100%;max-width:300px;height:50%;background-color:rgba(255,255,255,0.7);transition:0.3s ease-in-out;-webkit-transform:translateX(105%);transform:translateX(105%);display:flex;justify-content:flex-start;align-items:center;}
-    #nav-content ul{padding:20px;}
-    #nav-content a{display:block;padding:10px;color:#333;transition: 0.3s;}
-    #nav-content a:hover{color: #666;transition: 0.3s;}
-    #nav-input:checked ~ #nav-close{display:block;opacity:0.5;}
-    #nav-input:checked ~ #nav-content{-webkit-transform: translateX(0%);transform: translateX(0%);box-shadow: 6px 0 25px rgba(0,0,0,.15);}*/
+    .sns{position:absolute;top:0;right:0;padding:15px;}
+    .sns ul{display:flex;justify-content:center;align-items:center;}
+    .sns a{padding:5px;margin:5px;}
+    .sns img{width:30px;height:30px;display:flex;justify-content:center;align-items:center;}
   </style>
 
   <!--  main  -->
@@ -47,16 +31,24 @@
     main{background-color:rgb(242,236,226);}
     .box-p {background-color: #fff;}
     .h1{width:100%;height:250px;font-size:32px;display:flex;justify-content:center;align-items:center;}
+  </style>
+
+  <!--  section1  -->
+  <style>
     #section1{max-width:1200px;margin:0 auto;width: 100%;height:auto;display:flex;margin-bottom: 100px;}
     .img-1{width:66.667%;display:flex;justify-content:center;position: relative;}
     .img-1 img{width:100%;height:100%;object-fit:cover;object-position:bottom;}
     .s1-p{position: absolute;bottom:10px;left:10px;background-color:rgb(255,255,255,0.6);padding: 5px 15px;z-index:1;}
     .s-p{font-size:14px;}
-    .box-1{width:33.333%;display:flex;justify-content:center;align-items:flex-end;position: relative;}
-    .box-1-p{width: 140%;max-height: 100%;overflow: scroll;height:auto;background-color: #fff;position:absolute;right:0;bottom:5%;padding:15px 10px;}
-    .box-1-p h2{font-size: 26px;padding: 10px 10px 0;}
-    .box-1-p h3{font-size: 14px;padding: 0 10px 10px;}
-    .box-1-p p{font-size: 14px;padding: 10px;}
+    .box-1{width:33.333%;position: relative;}
+    .box-1-p{width: 140%;max-height: 100%;overflow: scroll;background-color:#fff;position:absolute;right:0;bottom:5%;padding:15px 10px;}
+    .box-1-p h2{font-size: 26px;margin: 10px 10px 0;}
+    .box-1-p h3{font-size: 14px;margin: 0 10px 10px;}
+    .box-1-p p{font-size: 14px;margin: 10px;}
+  </style>
+
+  <!--  section2  -->
+  <style>
     #section2{max-width:1200px;margin:0 auto;width: 100%;height:auto;display:flex;margin-bottom: 100px;}
     .img-2{order: 1;width:66.667%;display:flex;justify-content:center;position: relative;}
     .img-2 img{width:100%;height:100%;object-fit:cover;object-position:bottom;}
@@ -66,6 +58,10 @@
     .box-2-p h2{font-size: 26px;padding: 10px 10px 0;}
     .box-2-p h3{font-size: 14px;padding: 0 10px 10px;}
     .box-2-p p{font-size: 14px;padding: 10px;}
+  </style>
+
+  <!--  section3  -->
+  <style>
     #section3{max-width:1200px;margin:0 auto;width: 100%;height:auto;display:flex;margin-bottom: 100px;}
     .img-3{width:66.667%;display:flex;justify-content:center;position: relative;}
     .img-3 img{width:100%;height:100%;object-fit:cover;object-position:bottom;}
@@ -75,14 +71,26 @@
     .box-3-p h2{font-size: 26px;padding: 10px 10px 0;}
     .box-3-p h3{font-size: 14px;padding: 0 10px 10px;}
     .box-3-p p{font-size: 14px;padding: 10px;}
+  </style>
+
+  <!--  section4  -->
+  <style>
     #section4{height:500px;display:flex;margin-bottom:100px;position:relative;}
     .img-4 img{width:100%;height:100%;object-fit:cover;object-position: center;}
     .s4-h2{font-size: 30px;position: absolute;top:0;left:0;display: flex;width: 70%;height: 80%;align-items: center;justify-content: center;}
     .s4-p{position: absolute;bottom:10px;right:10px;background-color:rgb(255,255,255,0.6);padding: 5px 15px;}
+  </style>
+
+  <!--  section5  -->
+  <style>
     #section5{max-width:1200px;margin:0 auto;width: 100%;height:auto;display:flex;margin-top: 150px;margin-bottom:150px;}
     .flex-5{display: flex;justify-content: space-between;}
     .img-5{width:33%;height:auto;}
     .img-5 img{width:100%;height: 100%;object-fit:cover;}
+  </style>
+
+  <!--  section6  -->
+  <style>
     #section6{height:auto;display:flex;margin-bottom:100px;}
     #section6 img{width:45%;vertical-align: bottom;}
     .box-6{width:10%;position: relative;}
@@ -90,15 +98,20 @@
     .just-6{text-align: center;}
     .just-6 h2{color: #f00;font-size:24px;}
     .just-6 p{font-size:16px;}
+  </style>
+
+  <!--  section7  -->
+  <style>
     #section7{width:100%;}
     #section7 h2{width:100%;height:700px;font-size:32px;display:flex;justify-content:center;align-items:center;}
+  </style>
+
+  <!--  footer  -->
+  <style>
     footer{width:100%;height:60px;background-color: #333;}
     footer p{font-size:12px;color:#eee;width:100%;height:60px;display:flex;justify-content:center;align-items:center;}
-    .sns{position:absolute;top:0;right:0;padding:15px;}
-    .sns ul{display:flex;justify-content:center;align-items:center;}
-    .sns a{padding:5px;margin:5px;}
-    .sns img{width:30px;height:30px;display:flex;justify-content:center;align-items:center;}
   </style>
+
 
   <!-- @media only screen and (max-width: 1020px) and (min-width: 768px) -->
   <style>
@@ -106,9 +119,9 @@
       .tl{border-left:60vw solid transparent;}
       #section1,#section2,#section3{max-width:90%;}
       .s-p{font-size:12px;}
-      .box-1-p,.box-2-p,.box-3-p{width: 120%;padding:5px;}
-      .box-1-p h2,.box-2-p h2,.box-3-p h2{font-size:20px;padding:5px 5px 0;}
-      .box-1-p h3,.box-2-p h3,.box-3-p h3{font-size:12px;padding:0 5px 5px;}
+      .box-1-p,.box-2-p,.box-3-p{width:120%;padding:5px;}
+      .box-1-p h2,.box-2-p h2,.box-3-p h2{font-size:18px;margin:5px 5px 0;}
+      .box-1-p h3,.box-2-p h3,.box-3-p h3{font-size:12px;marign:0 5px 5px;}
       .box-1-p p,.box-2-p p,.box-3-p p{font-size:12px;padding:5px;}
       #section4{height:400px;}
       #section5{max-width:90%;}
@@ -125,13 +138,13 @@
     @media only screen and (max-width: 767px) {
       .tl{border-left:80vw solid transparent;}
       .h1{font-size:26px;}
-      #section1,#section2,#section3{width: 90%;display:block;}
+      #section1,#section2,#section3{width: 100%;display:block;}
       .img-1,.img-2,.img-3{width:100%;display:block;}
       .box-1,.box-2,.box-3{width:100%;display:block;}
-      .box-1-p,.box-2-p,.box-3-p{width: 100%;height:auto;position:static;padding:10px 5px;}
-      .box-1-p h2,.box-2-p h2,.box-3-p h2{font-size:18px;padding:5px 5px 0;}
-      .box-1-p h3,.box-2-p h3,.box-3-p h3{font-size:14px;padding:0 5px 5px;}
-      .box-1-p p,.box-2-p p,.box-3-p p{font-size:14px;padding:5px;}
+      .box-1-p,.box-2-p,.box-3-p{width:100%;height:auto;position:static;}
+      .box-1-p h2,.box-2-p h2,.box-3-p h2{font-size:15px;margin:0 5px 0;}
+      .box-1-p h3,.box-2-p h3,.box-3-p h3{font-size:12px;margin:0 5px 12px;}
+      .box-1-p p,.box-2-p p,.box-3-p p{font-size:12px;}
       .s1-p,.s3-p{position: absolute;bottom:10px;left:auto;right:10px;}
       #section4{height:250px;}
       .s4-h2{font-size: 20px;}
@@ -146,8 +159,8 @@
       #section6 img{width:100%;}
       .box-6{width:100%;height:auto;position:relative;}
       .box-6-box{width:40vw;height:40vw;margin:auto;}
-      .just-6 h2{font-size:18px;}
-      .just-6 p{font-size:11px;}
+      .just-6 h2{font-size:15px;}
+      .just-6 p{font-size:12px;}
       .sns a{padding:5px;margin:5px;}
       .sns img{width:22px;height:22px;}
     }
@@ -158,38 +171,18 @@
     <div class="header">
       <div class="tl"></div>
       <div class="top"><h1><nobr>Why don't you</nobr><br><nobr>come to Kyoto?</nobr></h1></div>
+      <div class="sns"><ul><a href=""><li><img src="facebook2.svg" alt="facebook"></li></a><a href=""><li><img src="twitter2.svg" alt="twitter"></li></a><a href=""><li><img src="instagram2.svg" alt="instagram"></li></a></ul></div>
     </div>
   </header>
   <main>
     <h1 class="h1">そうだ、京都に行こう。</h1>
-    <div id="section1"><div class="img-1"><img src="fu.png" alt="伏見稲荷大社"><p class="s-p s1-p">伏見稲荷大社</p></div><div class="box-1"><div class="box-p box-1-p"><h2>京都の魅力</h2><h3>The charm of Kyoto</h3><p>なんとなくで。思いつきで。ふと、行きたくなる。特別、なにかをするわけでもなく。ただ、ふらっと。<br>すごく、気軽な場所。</p><p>今すぐにでも行きたいっ。次の休みに必ず行こう。突然の衝動。なぜか、選んでいる自分がいる。<br>すごく、特別な場所。</p></div></div></div>
+    <div id="section1"><div class="img-1"><img src="fu.png" alt="伏見稲荷大社"><p class="s-p s1-p">伏見稲荷大社</p></div><div class="box-1"><div class="box-p box-1-p"><h2>京都の魅力</h2><h3>The charm of Kyoto</h3><p>なんとなくで。思いつきで。ふと、行きたくなる。特別、なにかをするわけでもなく。ただ、ふらっと。<br>すごく、気軽な場所。<br>今すぐにでも行きたいっ。次の休みに必ず行こう。突然の衝動。なぜか、選んでいる自分がいる。<br>すごく、特別な場所。</p></div></div></div>
     <div id="section2"><div class="img-2"><img src="kinkaku.png" alt="金閣寺"><p class="s-p s2-p">金閣寺</p></div><div class="box-2"><div class="box-p box-2-p"><h2>心洗われる</h2><h3>Your heart is washed</h3><p>呼吸をするだけで、心が洗われる。<br>そこにいるだけで、心は浄化されてゆく。<br>そこでしか感じれない、空気がある。<br>五感で楽しむ、京都。</p></div></div></div>
     <div id="section3"><div class="img-3"><img src="togetsu.png" alt="渡月橋"><p class="s-p s3-p">渡月橋</p></div><div class="box-3"><div class="box-p box-3-p"><h2>人も観光のひとつ</h2><h3>People are also one of sightseeing</h3><p>人が集うからこそ、魅力が増す。<br>集い、囲まれ、輝きを放つ。<br>輝かせる人々の偉大さに、人は容易く気付けない。</p></div></div></div>
     <div id="section4"><div class="img-4"><img src="light.png" alt="五重塔"><h2 class="s4-h2">日帰りでも、旅行でも。</h2><p class="s-p s4-p">五重塔</p></div></div>
     <div id="section5"><div class="flex-5"><div class="img-5 img-5-1"><img src="kiyomi.png" alt="清水寺"></div><div class="img-5 img-5-2"><img src="jizo.png" alt="地蔵"></div><div class="img-5 img-5-3"><img src="mochi.png" alt="あぶり餅"></div></div></div>
-    <div id="section6">
-      <img src="summer.png" alt="夏">
-      <div class="box-6">
-        <div class="box-6-box">
-          <div class="just-6">
-            <h2>Be careful.</h2>
-            <p>暑さ対策、もしくは<br>寒さ対策を。</p>
-            <p>Measures against <br><span style="color:orange;">heat</span> and <span style="color:skyblue;">cold</span>.</p>
-          </div>
-        </div>
-      </div>
-      <img src="winter.png" alt="冬">
-    </div>
+    <div id="section6"><img src="summer.png" alt="夏"><div class="box-6"><div class="box-6-box"><div class="just-6"><h2>Be careful.</h2><p>暑さ対策、もしくは<br>寒さ対策を。</p><p>Measures against <br><span style="color:orange;">heat</span> and <span style="color:skyblue;">cold</span>.</p></div></div></div><img src="winter.png" alt="冬"></div>
     <div id="section7"><h2>さあ、出掛けよう。</h2></div>
-    <!--<div class="list"><div id="nav"><input id="nav-input" type="checkbox" class="nav-unshown"/><label id="nav-open" for="nav-input"><span></span></label><label id="nav-close" for="nav-input" class="nav-unshown"></label><div id="nav-content"><ul><a href="#"><img src="facebook.svg" alt="facebook"><li>イベント</li></a><a href="#"><img src="instagram.svg" alt="instagram"><li>エリア情報</li></a><a href="#"><img src="facebook.svg" alt="facebook"><li>観光スポット</li></a><a href="#"><img src="facebook.svg" alt="facebook"><li>お得な情報</li></a></ul></div></div></div>-->
-    <div class="sns">
-      <ul>
-        <a href=""><li><img src="facebook2.svg" alt="facebook"></li></a>
-        <a href=""><li><img src="twitter2.svg" alt="twitter"></li></a>
-        <a href=""><li><img src="instagram2.svg" alt="instagram"></li></a>
-      </ul>
-    </ul>
-  </div>
   </main>
   <footer>
     <p>&copy; 2020 Kyoto. All rights reserved.</p>
